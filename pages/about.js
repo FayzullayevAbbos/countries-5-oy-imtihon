@@ -16,7 +16,8 @@ reques(countryApi);
 
 function aboutCountry(countries) {
   mainContainer.innerHTML = "";
-  countries.forEach((country) => {
+  let country
+  country = countries[0] 
     mainContainer.innerHTML += `
     <img
     class="country-info__img"
@@ -77,7 +78,7 @@ function aboutCountry(countries) {
     </div>
   </div> 
      `;
-  });
+  
 
  
   return mainContainer;
